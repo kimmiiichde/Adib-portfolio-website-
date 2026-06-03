@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adib Hasan Ovi | Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="scripts.js"></script>
 </head>
 <body>
-
-    <header>
-        <nav>
-            <ul>
+    <header class="site-header">
+        <nav class="nav">
+            <a class="logo" href="#home">Adib Hasan Ovi</a>
+            <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#education">Education</a></li>
                 <li><a href="#experience">Experience</a></li>
@@ -19,190 +20,168 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-
-        <div class="hero">
-            
-        <img src="images/ovi-picture.jpg" alt="Adib Hasan Ovi" class="profile-pic">
-            <h1>Adib Hasan Ovi</h1>
-            <h2>Computer Engineer · CS Student</h2>
-            <p>
-                Motivated Computer Science student passionate about
-                technology-driven problem solving and building innovative
-                digital solutions.
-            </p>
-
-            <div class="hero-buttons">
-                <a href="#projects" class="btn">View Portfolio</a>
-                <a href="#contact" class="btn">Contact Me</a>
-            </div>
-
-            <p class="location">📍 Germany 🇩🇪</p>
-        </div>
     </header>
 
-    <section id="about">
-        <h2>About</h2>
-        <p>
-            I'm a motivated Computer Science student with strong intelligence
-            and a passion for technology-driven problem solving.
-            I bring strong communication skills, analytical thinking,
-            and adaptability in multicultural environments.
-        </p>
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-bg"></div>
+            <div class="hero-content">
+                <div class="hero-copy">
+                    <p class="eyebrow">Portfolio / 2026</p>
+                    <h1>Adib Hasan Ovi</h1>
+                    <p class="typing" id="typing">Computer Science Student</p>
+                    <p class="hero-summary">
+                        Computer Engineer and CS student focused on technology-driven
+                        problem solving and practical digital solutions.
+                    </p>
+                    <div class="hero-actions">
+                        <a class="btn primary" href="#projects">View Projects</a>
+                        <a class="btn secondary" href="#contact">Contact Me</a>
+                    </div>
+                    <p class="location">Germany</p>
+                </div>
+                <div class="hero-visual" aria-hidden="true">
+                    <span class="portrait-ring"></span>
+                    <img src="ovi-picture-cutout.png" alt="" class="hero-portrait">
+                </div>
+            </div>
+        </section>
 
-        <p>
-            I'm seeking opportunities to further develop my technical expertise
-            and contribute to innovative projects that make a real impact.
-        </p>
-
-        <div class="about-grid">
+        <section id="about" class="section about-section">
             <div>
-                <h3>Location</h3>
-                <p>Germany</p>
+                <p class="section-label">About</p>
+                <h2>Building useful, responsive digital experiences.</h2>
+            </div>
+            <p>
+                I am a motivated Computer Science student with a passion for
+                software, AI, and technology-driven problem solving. I bring
+                analytical thinking, adaptability, and strong communication skills
+                from multicultural environments.
+            </p>
+        </section>
+
+        <section id="education" class="section">
+            <p class="section-label">Education</p>
+            <h2>Academic Background</h2>
+            <div class="timeline">
+                <article class="timeline-item">
+                    <span>2026 - 2029</span>
+                    <h3>BSc in Computer Science</h3>
+                    <p>GISMA University of Applied Sciences, Germany</p>
+                </article>
+                <article class="timeline-item">
+                    <span>2025</span>
+                    <h3>Foundation Programme in Artificial Intelligence</h3>
+                    <p>IU International University of Applied Sciences, Berlin</p>
+                </article>
+                <article class="timeline-item">
+                    <span>2023</span>
+                    <h3>Higher Secondary School Certificate</h3>
+                    <p>Bangladesh Navy School & College, Khulna - GPA 4.67 / 5.00</p>
+                </article>
+                <article class="timeline-item">
+                    <span>2021</span>
+                    <h3>Secondary School Certificate</h3>
+                    <p>Bangladesh Navy School & College, Khulna - GPA 5.00 / 5.00</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="experience" class="section">
+            <p class="section-label">Experience</p>
+            <h2>Work Experience</h2>
+            <div class="project-grid">
+                <article class="project-card">
+                    <span class="card-meta">Jun 2024 - Aug 2025</span>
+                    <h3>Warehouse Expansion Support</h3>
+                    <p>MAERSK Co & Ltd - supported a 100,000 sq. ft. warehouse expansion project.</p>
+                </article>
+                <article class="project-card">
+                    <span class="card-meta">Nov 2024 - Feb 2025</span>
+                    <h3>Student Trainee</h3>
+                    <p>Gulf Warehousing, Qatar - assisted inventory management and warehouse operations.</p>
+                </article>
+                <article class="project-card">
+                    <span class="card-meta">Dec 2023 - Mar 2024</span>
+                    <h3>Part-Time Student Work</h3>
+                    <p>Sunny Ltd, Qatar - supported product ordering and bilingual communication.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <p class="section-label">Skills</p>
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <article class="skill-card">
+                    <span>HTML</span>
+                    <div class="skill-bar"><span style="width: 90%"></span></div>
+                </article>
+                <article class="skill-card">
+                    <span>CSS</span>
+                    <div class="skill-bar"><span style="width: 85%"></span></div>
+                </article>
+                <article class="skill-card">
+                    <span>Responsive Design</span>
+                    <div class="skill-bar"><span style="width: 78%"></span></div>
+                </article>
+                <article class="skill-card">
+                    <span>Python</span>
+                    <div class="skill-bar"><span style="width: 78%"></span></div>
+                </article>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <p class="section-label">Projects</p>
+            <h2>Featured Work</h2>
+            <div class="project-grid">
+                <article class="project-card">
+                    <h3>Project / 001</h3>
+                    <p>A responsive personal portfolio created with HTML, CSS, and JavaScript.</p>
+                </article>
+                <article class="project-card">
+                    <h3>Project / 002</h3>
+                    <p>In progress - a practical software project for building stronger programming skills.</p>
+                </article>
+                <article class="project-card">
+                    <h3>Project / 003</h3>
+                    <p>In progress - focused on applying web development and problem-solving concepts.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact-section">
+            <div>
+                <p class="section-label">Contact</p>
+                <h2>Let us build something.</h2>
+                <p>Email: <a href="mailto:adibhasanovi2006@gmail.com">adibhasanovi2006@gmail.com</a></p>
+                <p>Phone: <a href="tel:+4917630333257">+49 176 30333257</a></p>
+                <p>GitHub: <a href="https://github.com/kimmiiichde">github.com/kimmiiichde</a></p>
+                <p>LinkedIn: <a href="https://linkedin.com/in/adib-hasan-ovi">linkedin.com/in/adib-hasan-ovi</a></p>
+                <p>Instagram: <a href="https://instagram.com/kapitan_alive">@kapitan_alive</a></p>
             </div>
 
-            <div>
-                <h3>Field</h3>
-                <p>Computer Science</p>
-            </div>
+            <form class="contact-form">
+                <label>
+                    Name
+                    <input type="text" name="name" placeholder="Your name" required>
+                </label>
+                <label>
+                    Email
+                    <input type="email" name="email" placeholder="your@email.com" required>
+                </label>
+                <label>
+                    Message
+                    <textarea name="message" rows="4" placeholder="Tell me about your project" required></textarea>
+                </label>
+                <button class="btn primary" type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
 
-            <div>
-                <h3>Career Goal</h3>
-                <p>Software & Tech Innovation</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="education">
-        <h2>Education</h2>
-
-        <div class="card">
-            <h3>BSc in Computer Science</h3>
-            <p>GISMA University of Applied Sciences, Germany</p>
-            <span>2026 — 2029</span>
-            <p>
-                Undergraduate degree focusing on software engineering and
-                modern computing.
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>Foundation Programme in Artificial Intelligence</h3>
-            <p>IU International University of Applied Sciences, Berlin</p>
-            <span>2025</span>
-        </div>
-
-        <div class="card">
-            <h3>Higher Secondary School Certificate (Science)</h3>
-            <p>Bangladesh Navy School & College, Khulna</p>
-            <span>2023</span>
-            <p>GPA 4.67 / 5.00</p>
-        </div>
-
-        <div class="card">
-            <h3>Secondary School Certificate (Science)</h3>
-            <p>Bangladesh Navy School & College, Khulna</p>
-            <span>2021</span>
-            <p>GPA 5.00 / 5.00</p>
-        </div>
-    </section>
-
-    <section id="experience">
-        <h2>Experience</h2>
-
-        <div class="card">
-            <h3>Warehouse Expansion Support</h3>
-            <p>MAERSK Co & Ltd</p>
-            <span>Jun 2024 — Aug 2025</span>
-            <p>
-                Supported the implementation of a 100,000 sq. ft.
-                warehouse expansion project, contributing to enhanced
-                storage capacity and operational efficiency.
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>Student Trainee</h3>
-            <p>Gulf Warehousing, Qatar</p>
-            <span>Nov 2024 — Feb 2025</span>
-            <p>
-                Assisted in inventory management and warehouse operations.
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>Part-Time Student Work</h3>
-            <p>Sunny Ltd, Qatar</p>
-            <span>Dec 2023 — Mar 2024</span>
-            <p>
-                Assisted with product ordering and warehouse operations,
-                improving bilingual communication skills.
-            </p>
-        </div>
-    </section>
-
-    <section id="skills">
-        <h2>Skills</h2>
-
-        <div class="skills-grid">
-            <div>HTML - 85%</div>
-            <div>CSS - 80%</div>
-            <div>Responsive Design - 78%</div>
-            <div>Python - 70%</div>
-            <div>OOP - 65%</div>
-            <div>Web Development - 75%</div>
-        </div>
-
-        <h3>Soft Skills</h3>
-
-        <ul>
-            <li>Problem Solving</li>
-            <li>Analytical Thinking</li>
-            <li>Multicultural Communication</li>
-            <li>Team Collaboration</li>
-        </ul>
-    </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-
-        <div class="card">
-            <h3>PROJECT / 001</h3>
-            <p>In Progress</p>
-        </div>
-
-        <div class="card">
-            <h3>PROJECT / 002</h3>
-            <p>In Progress</p>
-        </div>
-
-        <div class="card">
-            <h3>PROJECT / 003</h3>
-            <p>In Progress</p>
-        </div>
-    </section>
-
-    <section id="contact">
-        <h2>Get In Touch</h2>
-
-        <p>Email: adibhasanovi2006@gmail.com</p>
-        <p>Phone: +49 176 30333257</p>
-        <p>LinkedIn: adib-hasan-ovi</p>
-        <p>GitHub: kimmiiichde</p>
-        <p>Instagram: @kapitan_alive</p>
-
-        <form>
-            <input type="text" placeholder="Your Name">
-            <input type="email" placeholder="Your Email">
-            <textarea placeholder="Tell me about your project or idea..."></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
-
-    <footer>
-        <p>© 2026 Adib Hasan Ovi. All Rights Reserved.</p>
+    <footer class="footer">
+        <p>Copyright 2026 Adib Hasan Ovi. All Rights Reserved.</p>
     </footer>
-
-    <script src="script.js"></script>
-
 </body>
 </html>
