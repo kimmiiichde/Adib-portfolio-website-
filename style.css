@@ -154,7 +154,7 @@ a {
     position: relative;
     min-height: 560px;
     display: grid;
-    place-items: end center;
+    place-items: center;
 }
 
 .portrait-ring {
@@ -170,8 +170,11 @@ a {
     position: relative;
     z-index: 1;
     width: min(100%, 390px);
-    max-height: 620px;
-    object-fit: contain;
+    height: min(70vh, 560px);
+    object-fit: cover;
+    object-position: center top;
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: 28px;
     filter: drop-shadow(0 34px 60px rgba(0, 0, 0, 0.62));
 }
 
@@ -439,6 +442,7 @@ a {
 
     .hero-portrait {
         width: min(78vw, 340px);
+        height: 420px;
     }
 
     .about-section,
@@ -460,6 +464,10 @@ a {
 
     .hero-visual {
         min-height: 330px;
+    }
+
+    .hero-portrait {
+        height: 330px;
     }
 
     .hero-actions {
