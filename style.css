@@ -347,8 +347,45 @@ a {
     font-size: 1.25rem;
 }
 
+.project-card h4 {
+    margin-bottom: 12px;
+    color: var(--text);
+    font-size: 1.05rem;
+}
+
 .project-card p {
     color: var(--muted);
+}
+
+.featured-project {
+    min-height: 310px;
+}
+
+.project-features {
+    display: grid;
+    gap: 8px;
+    margin: 18px 0 22px;
+    padding-left: 18px;
+    color: var(--muted);
+    font-size: 0.94rem;
+}
+
+.project-link {
+    display: inline-flex;
+    align-items: center;
+    min-height: 40px;
+    padding: 0 16px;
+    border: 1px solid rgba(230, 43, 30, 0.55);
+    border-radius: 8px;
+    color: var(--text);
+    font-weight: 800;
+    transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+.project-link:hover {
+    transform: translateY(-2px);
+    border-color: var(--accent);
+    background: rgba(230, 43, 30, 0.14);
 }
 
 .contact-form {
